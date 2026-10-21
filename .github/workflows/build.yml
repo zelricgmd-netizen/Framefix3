@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
- 
+
 jobs:
   build:
     strategy:
@@ -21,6 +21,7 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           combine: true
+          sdk: latest
           target: ${{ matrix.config.target }}
   package:
     name: Package builds
@@ -33,4 +34,3 @@ jobs:
         with:
           name: Build Output
           path: ${{ steps.build.outputs.build-output }}
- 
