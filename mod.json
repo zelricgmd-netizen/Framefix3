@@ -6,10 +6,10 @@
     "mac": "2.2081",
     "ios": "2.2081"
   },
-  "id": "yourname.framefix",
+  "id": "ZelricGMD.framefix",
   "name": "FrameFix",
   "version": "v0.1.0",
-  "developer": "yourname",
+  "developer": "ZelricGMD",
   "description": "Practice tool: corrects early clicks and releases using a hidden trajectory predictor.",
   "tags": ["utility", "enhancement"],
   "settings": {
