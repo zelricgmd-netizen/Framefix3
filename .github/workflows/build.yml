@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-
+ 
 jobs:
   build:
     strategy:
@@ -11,7 +11,7 @@ jobs:
       matrix:
         config:
           - name: iOS
-            os: macos-14
+            os: macos-15
             target: iOS
     name: ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
@@ -33,3 +33,4 @@ jobs:
         with:
           name: Build Output
           path: ${{ steps.build.outputs.build-output }}
+ 
